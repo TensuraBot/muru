@@ -1,0 +1,91 @@
+.App {
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #f0f0f0;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+.anime-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.anime-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.anime-card:hover {
+  transform: scale(1.05);
+}
+
+.anime-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.anime-card h3 {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.search form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.search input {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.anime-detail img {
+  max-width: 300px;
+  float: left;
+  margin-right: 20px;
+}
+
+.episode-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.episode-list li {
+  margin-bottom: 10px;
+}
+
+.episode-list a {
+  text-decoration: none;
+  color: #007bff;
+}
